@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artifact Archive</title>
+    <link rel="stylesheet" href="./hw5.css">
+</head>
+
+<body>
+    <div id="controlRoomContainer">
+        <h1>Control Room</h1>
+        <div id="controlRoom">
+            <label for="setPropertyName">Set a Property Name:</label>
+            <input type="text" id="setPropertyName">
+            <label for="setPropertyValue"> with Value:</label>
+            <input type="text" id="setPropertyValue">
+            <button id="setPropertyButton">Set Property</button>
+            <br>
+            <label for="filterPropertyName">Filter by Property Name:</label>
+            <input type="text" id="filterPropertyName">
+            <label for="filterPropertyValue">Filter by Property with Value:</label>
+            <input type="text" id="filterPropertyValue">
+            <button id="filterButton">Filter</button>
+            <br>
+
+            <button id="getAllPropertiesButton">Get all Properties</button>
+        </div>
+
+    </div>
+    <div id="searchResultContainer">
+        <h2 id="searchResultHeading">Search Results</h1>
+            <div id="searchResult"></div>
+    </div>
+
+    <div id="artifactDisplay">
+        <button id="newArtifactButton">New Artifact</button>
+    </div>
+    <div id="collectionDisplay">
+
+    </div>
+    <button id="showCollectionButton">Show Collection</button>
+    <script src="./hw5.js"></script>
+</body>
+
+</html>

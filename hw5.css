@@ -1,0 +1,163 @@
+/* tail winds approach where classes are predefined as a 
+certain characteristic, that can be added. */
+
+#artifactDisplay{
+    display: flex;
+    position: relative;
+    width: 500px;
+    height: 500px;
+    border: 1px solid black;
+    flex-wrap: wrap;
+    
+    justify-content: center;
+    align-items: center;
+    
+}
+#newArtifactButton{
+    position: absolute;
+    bottom: 10px;
+}
+#collectionDisplay{
+    width: 500px;
+    height: 500px;
+    border: 1px solid black;
+    overflow: auto;
+    
+}
+#searchResult{
+    border: solid 1px black;
+    height: 100px;
+    overflow: auto;
+}
+
+/* ARTIFACT STYLES*/
+/* artifact background color */
+.artifact{
+    display: flex;
+    border: 1px solid black;
+
+    justify-content: space-evenly;
+    align-items: center;
+    color: red ;
+}
+.num{
+    color: blue;
+}
+
+.hoverable:hover{
+    scale: 1.5;
+    cursor:zoom-in;
+}
+/*artifact shape shapes*/
+.square{
+    width: 100px;
+    height: 100px;
+}
+.rectangle-vertical{
+    width: 100px;
+    height: 200px;
+}
+.rectangle-horizontal{
+    width: 200px;
+    height: 100px;
+}
+.circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.oval-vertical{
+    width: 100px;
+    height: 200px;
+    border-radius: 50%;
+}
+.oval-horizontal{
+    width: 200px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+
+/* TEXT STYLES*/
+/* text bg color*/
+/*font styles*/
+.italics{
+    font-style: italic;
+}
+.bold{
+    font-size: bold;
+}
+/*font decoration*/
+.strikethrough{
+    text-decoration: line-through ;
+}
+.overline{
+    text-decoration: overline;
+}
+.underline{
+    text-decoration: underline;
+}
+/*line sold vs wavy and color*/
+
+
+
+/* Reset and global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #f5f5dc; /* Light beige for an earthy feel */
+    background-image: url('archeology-background.jpg'); /* Replace with your background image */
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #333;
+    padding: 20px;
+}
+
+h1, h2, h3 {
+    font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#controlRoomContainer, #searchResultContainer, #artifactDisplay, #collectionDisplay {
+    background-color: rgba(255, 255, 255, 0.8); /* Light semi-transparent white */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+#controlRoom {
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"], button {
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    font-size: 16px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Adjust as needed for other elements and specific design elements */
